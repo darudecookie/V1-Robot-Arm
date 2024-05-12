@@ -9,9 +9,9 @@
 const int stepper_servo_axes = 4;
 
 // these global angle values manage program's target angle
-float actual_angles[stepper_servo_axes];
-float target_angles[stepper_servo_axes] = {0};
-float old_target_angles[stepper_servo_axes] = {0};
+float actual_angles[stepper_servo_axes];    //current measured angles from encoders
+float target_angles[stepper_servo_axes] = {0};    //angles each axis tries to move to 
+float old_target_angles[stepper_servo_axes] = {0};    //p
 
 bool new_target_angles[stepper_servo_axes] = {false, false, false, false};
 
