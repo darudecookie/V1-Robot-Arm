@@ -340,12 +340,6 @@ void loop()
     {
         StepperServo_array[i]->main();
     }
-    /*
-    update_from_serial(StepperServo_array,  stepper_servo_axes);
-    manage_e_stop(StepperServo_array,  stepper_servo_axes);
-    manage_joint_hold(StepperServo_array,  stepper_servo_axes);
-    */
-    update_from_serial();
-    manage_e_stop();
-    manage_joint_hold();
+
+    update_from_joystick();
 }
